@@ -15,7 +15,7 @@ CCUSAGE = "/opt/homebrew/bin/ccusage"
 # Claude Code 的实际限额通过 API 动态下发，无本地记录。
 # 这里用反推值，如显示百分比与 /config 不符，请手动调整。
 # 单位：tokens（例如 12_000_000 = 1200 万）
-TOKEN_LIMIT = 14_800_000
+TOKEN_LIMIT = 24_300_000
 
 # 颜色阈值（基于用量百分比）
 # 💚 < 50%，💛 50~75%，💔 > 75%
