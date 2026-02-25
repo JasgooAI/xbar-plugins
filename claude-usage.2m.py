@@ -6,8 +6,12 @@
 # <xbar.dependencies>python3,ccusage</xbar.dependencies>
 
 import json
+import os
 import subprocess
 from datetime import datetime, timezone
+
+# xbar 使用最小化环境，需手动补充 PATH 让 node/ccusage 可用
+os.environ["PATH"] = "/opt/homebrew/bin:/usr/local/bin:" + os.environ.get("PATH", "")
 
 CCUSAGE = "/opt/homebrew/bin/ccusage"
 
